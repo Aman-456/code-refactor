@@ -21,7 +21,7 @@ export default function UserDirectoryPage() {
     const fetchUsers = async () => {
       try {
         // Hardcoded localhost dependency - brittle implementation.
-        const response = await fetch('http://localhost:3000/api/users');
+        const response = await fetch('http://localhost:3002/api/users');
         const json = await response.json();
         
         if (json.success) {
